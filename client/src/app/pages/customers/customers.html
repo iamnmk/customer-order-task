@@ -1,0 +1,183 @@
+<div class="customers-container">
+  <!-- Header Section -->
+  <div class="page-header">
+    <div class="header-content">
+      <div class="header-top-row">
+        <div>
+          <h1 class="page-title">Customers Dashboard</h1>
+          <p class="page-subtitle">Manage your customer base and track their orders</p>
+        </div>
+        
+        <!-- Real-time connection indicator -->
+        <div class="connection-status" [class.connected]="isRealtimeConnected" [class.disconnected]="!isRealtimeConnected">
+          <span class="status-dot"></span>
+          <span class="status-text">{{ isRealtimeConnected ? 'Live Updates Active' : 'Connecting...' }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Error Alert -->
+  <div *ngIf="error" class="alert alert-error">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z" clip-rule="evenodd" />
+    </svg>
+    <span>{{ error }}</span>
+  </div>
+
+  <!-- Create / Edit Form -->
+  <div class="form-card">
+    <div class="form-header">
+      <h2 class="form-title">
+        {{ editingCustomerId ? 'Edit Customer' : 'Add New Customer' }}
+      </h2>
+      <p class="form-subtitle">
+        {{ editingCustomerId ? 'Update customer information' : 'Fill in the details to create a new customer' }}
+      </p>
+    </div>
+
+    <div class="form-body">
+      <div class="form-grid">
+        <div class="form-group">
+          <label class="form-label">Full Name</label>
+          <input 
+            type="text" 
+            class="form-input" 
+            placeholder="Enter customer name" 
+            [(ngModel)]="form.name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input 
+            type="email" 
+            class="form-input" 
+            placeholder="customer@example.com" 
+            [(ngModel)]="form.email"
+          />
+        </div>
+
+        <div class="form-group checkbox-group">
+          <label class="checkbox-label">
+            <input 
+              type="checkbox" 
+              class="form-checkbox" 
+              [(ngModel)]="form.isActive"
+            />
+            <span class="checkbox-text">Active Status</span>
+          </label>
+          <p class="checkbox-help">Customer can place orders when active</p>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn btn-primary" (click)="submit()">
+          <svg *ngIf="!editingCustomerId" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
+          </svg>
+          <svg *ngIf="editingCustomerId" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M10 3.75a2 2 0 10-4 0 2 2 0 004 0zM17.25 4.5a.75.75 0 000-1.5h-5.5a.75.75 0 000 1.5h5.5zM5 3.75a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5a.75.75 0 01.75.75zM4.25 17a.75.75 0 000-1.5h-1.5a.75.75 0 000 1.5h1.5zM17.25 17a.75.75 0 000-1.5h-5.5a.75.75 0 000 1.5h5.5zM9 10a.75.75 0 01-.75.75h-5.5a.75.75 0 010-1.5h5.5A.75.75 0 019 10zM17.25 10.75a.75.75 0 000-1.5h-1.5a.75.75 0 000 1.5h1.5z" />
+          </svg>
+          {{ editingCustomerId ? 'Update Customer' : 'Create Customer' }}
+        </button>
+
+        <button *ngIf="editingCustomerId" class="btn btn-secondary" (click)="resetForm()">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Loading State -->
+  <div *ngIf="loading" class="loading-container">
+    <div class="loading-spinner"></div>
+    <p class="loading-text">Loading customers...</p>
+  </div>
+
+  <!-- Customer Cards Grid -->
+  <div class="customers-grid" *ngIf="!loading">
+    <div class="customer-card" *ngFor="let c of customers">
+      <!-- Card Header -->
+      <div class="card-header">
+        <div class="customer-avatar">
+          {{ c.name.charAt(0).toUpperCase() }}
+        </div>
+        <div class="customer-info">
+          <h3 class="customer-name">{{ c.name }}</h3>
+          <p class="customer-email">{{ c.email }}</p>
+        </div>
+        <span class="status-badge" [class.status-active]="c.isActive" [class.status-inactive]="!c.isActive">
+          {{ c.isActive ? 'Active' : 'Inactive' }}
+        </span>
+      </div>
+
+      <!-- Card Stats -->
+      <div class="card-stats">
+        <div class="stat-item">
+          <div class="stat-icon stat-icon-orders">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M6 5v1H4.667a1.75 1.75 0 00-1.743 1.598l-.826 9.5A1.75 1.75 0 003.84 19H16.16a1.75 1.75 0 001.743-1.902l-.826-9.5A1.75 1.75 0 0015.333 6H14V5a4 4 0 00-8 0zm4-2.5A2.5 2.5 0 007.5 5v1h5V5A2.5 2.5 0 0010 2.5zM7.5 10a2.5 2.5 0 005 0V8.75a.75.75 0 011.5 0V10a4 4 0 01-8 0V8.75a.75.75 0 011.5 0V10z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="stat-content">
+            <p class="stat-label">Total Orders</p>
+            <p class="stat-value">{{ c.totalOrders }}</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon stat-icon-time">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="stat-content">
+            <p class="stat-label">Latest Order</p>
+            <p class="stat-value stat-value-small">
+              <span *ngIf="c.latestOrderTime; else noOrders">
+                {{ c.latestOrderTime | date: 'short' }}
+              </span>
+              <ng-template #noOrders>No orders yet</ng-template>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Actions -->
+      <div class="card-actions">
+        <button class="btn-action btn-action-view" [routerLink]="['/customers', c.id, 'orders']">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M10 12.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" />
+            <path fill-rule="evenodd" d="M.664 10.59a1.651 1.651 0 010-1.186A10.004 10.004 0 0110 3c4.257 0 7.893 2.66 9.336 6.41.147.381.146.804 0 1.186A10.004 10.004 0 0110 17c-4.257 0-7.893-2.66-9.336-6.41zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+          </svg>
+          View Orders
+        </button>
+        <button class="btn-action btn-action-edit" (click)="edit(c)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M5.433 13.917l1.262-3.155A4 4 0 017.58 9.42l6.92-6.918a2.121 2.121 0 013 3l-6.92 6.918c-.383.383-.84.685-1.343.886l-3.154 1.262a.5.5 0 01-.65-.65z" />
+            <path d="M3.5 5.75c0-.69.56-1.25 1.25-1.25H10A.75.75 0 0010 3H4.75A2.75 2.75 0 002 5.75v9.5A2.75 2.75 0 004.75 18h9.5A2.75 2.75 0 0017 15.25V10a.75.75 0 00-1.5 0v5.25c0 .69-.56 1.25-1.25 1.25h-9.5c-.69 0-1.25-.56-1.25-1.25v-9.5z" />
+          </svg>
+          Edit
+        </button>
+        <button class="btn-action btn-action-delete" (click)="remove(c.id)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M8.75 1A2.75 2.75 0 006 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 10.23 1.482l.149-.022.841 10.518A2.75 2.75 0 007.596 19h4.807a2.75 2.75 0 002.742-2.53l.841-10.52.149.023a.75.75 0 00.23-1.482A41.03 41.03 0 0014 4.193V3.75A2.75 2.75 0 0011.25 1h-2.5zM10 4c.84 0 1.673.025 2.5.075V3.75c0-.69-.56-1.25-1.25-1.25h-2.5c-.69 0-1.25.56-1.25 1.25v.325C8.327 4.025 9.16 4 10 4zM8.58 7.72a.75.75 0 00-1.5.06l.3 7.5a.75.75 0 101.5-.06l-.3-7.5zm4.34.06a.75.75 0 10-1.5-.06l-.3 7.5a.75.75 0 101.5.06l.3-7.5z" clip-rule="evenodd" />
+          </svg>
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Empty State -->
+  <div *ngIf="!loading && customers.length === 0" class="empty-state">
+    <div class="empty-state-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+      </svg>
+    </div>
+    <h3 class="empty-state-title">No customers yet</h3>
+    <p class="empty-state-text">Get started by creating your first customer using the form above.</p>
+  </div>
+</div>

@@ -1,0 +1,343 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|c:\\users\\numaa\\onedrive\\desktop\\dotnet-task\\server\\server\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|solutionrelative:controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|c:\\users\\numaa\\onedrive\\desktop\\dotnet-task\\server\\server\\dtos\\orders\\pagedresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|solutionrelative:dtos\\orders\\pagedresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|c:\\users\\numaa\\onedrive\\desktop\\dotnet-task\\server\\server\\dtos\\orders\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|solutionrelative:dtos\\orders\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|c:\\users\\numaa\\onedrive\\desktop\\dotnet-task\\server\\server\\services\\orders\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|solutionrelative:services\\orders\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|c:\\users\\numaa\\onedrive\\desktop\\dotnet-task\\server\\server\\services\\orders\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|solutionrelative:services\\orders\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|c:\\users\\numaa\\onedrive\\desktop\\dotnet-task\\server\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|c:\\users\\numaa\\onedrive\\desktop\\dotnet-task\\server\\server\\services\\jobs\\orderjobmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|solutionrelative:services\\jobs\\orderjobmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|c:\\users\\numaa\\onedrive\\desktop\\dotnet-task\\server\\server\\signalr\\ordershub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|solutionrelative:signalr\\ordershub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|c:\\users\\numaa\\onedrive\\desktop\\dotnet-task\\server\\server\\services\\jobs\\iorderjobmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|solutionrelative:services\\jobs\\iorderjobmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|c:\\users\\numaa\\onedrive\\desktop\\dotnet-task\\server\\server\\services\\customers\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|solutionrelative:services\\customers\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|c:\\users\\numaa\\onedrive\\desktop\\dotnet-task\\server\\server\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|solutionrelative:controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|c:\\users\\numaa\\onedrive\\desktop\\dotnet-task\\server\\server\\services\\customers\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|solutionrelative:services\\customers\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|c:\\users\\numaa\\onedrive\\desktop\\dotnet-task\\server\\server\\dtos\\customers\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|solutionrelative:dtos\\customers\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|c:\\users\\numaa\\onedrive\\desktop\\dotnet-task\\server\\server\\dtos\\customers\\updatecustomerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|solutionrelative:dtos\\customers\\updatecustomerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|c:\\users\\numaa\\onedrive\\desktop\\dotnet-task\\server\\server\\dtos\\customers\\createcustomerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|solutionrelative:dtos\\customers\\createcustomerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|c:\\users\\numaa\\onedrive\\desktop\\dotnet-task\\server\\server\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|solutionrelative:models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|c:\\users\\numaa\\onedrive\\desktop\\dotnet-task\\server\\server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|c:\\users\\numaa\\onedrive\\desktop\\dotnet-task\\server\\server\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|c:\\users\\numaa\\onedrive\\desktop\\dotnet-task\\server\\server\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6979228C-648E-4C56-8715-FE075C23E22C}|Server.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrdersHub.cs",
+              "DocumentMoniker": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\SignalR\\OrdersHub.cs",
+              "RelativeDocumentMoniker": "SignalR\\OrdersHub.cs",
+              "ToolTip": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\SignalR\\OrdersHub.cs",
+              "RelativeToolTip": "SignalR\\OrdersHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T19:59:28.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T19:48:54.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Services\\Orders\\OrderService.cs",
+              "RelativeDocumentMoniker": "Services\\Orders\\OrderService.cs",
+              "ToolTip": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Services\\Orders\\OrderService.cs",
+              "RelativeToolTip": "Services\\Orders\\OrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T19:45:12.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Services\\Orders\\IOrderService.cs",
+              "RelativeDocumentMoniker": "Services\\Orders\\IOrderService.cs",
+              "ToolTip": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Services\\Orders\\IOrderService.cs",
+              "RelativeToolTip": "Services\\Orders\\IOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T19:44:53.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PagedResultDto.cs",
+              "DocumentMoniker": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Dtos\\Orders\\PagedResultDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\Orders\\PagedResultDto.cs",
+              "ToolTip": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Dtos\\Orders\\PagedResultDto.cs",
+              "RelativeToolTip": "Dtos\\Orders\\PagedResultDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T19:44:13.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderDto.cs",
+              "DocumentMoniker": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Dtos\\Orders\\OrderDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\Orders\\OrderDto.cs",
+              "ToolTip": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Dtos\\Orders\\OrderDto.cs",
+              "RelativeToolTip": "Dtos\\Orders\\OrderDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T19:43:47.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderJobManager.cs",
+              "DocumentMoniker": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Services\\Jobs\\OrderJobManager.cs",
+              "RelativeDocumentMoniker": "Services\\Jobs\\OrderJobManager.cs",
+              "ToolTip": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Services\\Jobs\\OrderJobManager.cs",
+              "RelativeToolTip": "Services\\Jobs\\OrderJobManager.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAA9wFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T19:21:31.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IOrderJobManager.cs",
+              "DocumentMoniker": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Services\\Jobs\\IOrderJobManager.cs",
+              "RelativeDocumentMoniker": "Services\\Jobs\\IOrderJobManager.cs",
+              "ToolTip": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Services\\Jobs\\IOrderJobManager.cs",
+              "RelativeToolTip": "Services\\Jobs\\IOrderJobManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T19:21:12.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Services\\Customers\\CustomerService.cs",
+              "RelativeDocumentMoniker": "Services\\Customers\\CustomerService.cs",
+              "ToolTip": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Services\\Customers\\CustomerService.cs",
+              "RelativeToolTip": "Services\\Customers\\CustomerService.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAIwFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T18:56:39.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T18:35:53.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CustomersController.cs",
+              "DocumentMoniker": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Controllers\\CustomersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CustomersController.cs",
+              "ToolTip": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Controllers\\CustomersController.cs",
+              "RelativeToolTip": "Controllers\\CustomersController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T18:59:38.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ICustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Services\\Customers\\ICustomerService.cs",
+              "RelativeDocumentMoniker": "Services\\Customers\\ICustomerService.cs",
+              "ToolTip": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Services\\Customers\\ICustomerService.cs",
+              "RelativeToolTip": "Services\\Customers\\ICustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T18:55:59.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CustomerDto.cs",
+              "DocumentMoniker": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Dtos\\Customers\\CustomerDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\Customers\\CustomerDto.cs",
+              "ToolTip": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Dtos\\Customers\\CustomerDto.cs",
+              "RelativeToolTip": "Dtos\\Customers\\CustomerDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T18:53:15.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UpdateCustomerDto.cs",
+              "DocumentMoniker": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Dtos\\Customers\\UpdateCustomerDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\Customers\\UpdateCustomerDto.cs",
+              "ToolTip": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Dtos\\Customers\\UpdateCustomerDto.cs",
+              "RelativeToolTip": "Dtos\\Customers\\UpdateCustomerDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T18:53:03.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CreateCustomerDto.cs",
+              "DocumentMoniker": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Dtos\\Customers\\CreateCustomerDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\Customers\\CreateCustomerDto.cs",
+              "ToolTip": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Dtos\\Customers\\CreateCustomerDto.cs",
+              "RelativeToolTip": "Dtos\\Customers\\CreateCustomerDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T18:52:45.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T18:35:10.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T18:33:56.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\Models\\Customer.cs",
+              "RelativeToolTip": "Models\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T18:32:47.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\numaa\\OneDrive\\Desktop\\dotnet-task\\server\\Server\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-03T18:31:17.179Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
